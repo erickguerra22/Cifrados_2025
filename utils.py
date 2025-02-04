@@ -12,11 +12,11 @@ def getOption(message, bigger, lower):
             print("El valor debe ser un número entero.\n")
     return op
 
-def generateKey(alphabet):
+def generateKey(alphabet, auto):
     length = 0
     while True:
         try:
-            length = int(input("Ingresa el tamaño deseado para la llave: \nR// "))
+            length = int(input("Ingresa el tamaño deseado para la llave: \nR// ")) if not auto else randint(1, 25)
             if length < 1:
                 print("El tamaño de la llave debe ser mayor a 0.\n")
             else: break

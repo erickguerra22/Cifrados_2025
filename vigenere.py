@@ -6,7 +6,7 @@ alphabet = "abcdefghijklmnñopqrstuvwxyz"
 def getKey():
     op = getOption("Seleccione el tipo de llave a utilizar:\n1. Definida\n2. Generada", 2, 1)
     while True:
-        key = generateKey(alphabet) if op == 2 else input("Ingresa la llave deseada: ")
+        key = generateKey(alphabet, False) if op == 2 else input("Ingresa la llave deseada: ")
         if op == 2:
             print(f"🔑 Llave generada: {key}")
         
