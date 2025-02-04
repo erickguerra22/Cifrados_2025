@@ -2,7 +2,7 @@
 PROJECT NAME
 -->
 
-# EJERCICIO 1
+# LABORATORIO 1
 <a id="readme-top"></a>
 
 <!--
@@ -10,20 +10,19 @@ PROJECT DESCRIPTION
 -->
 ## 📜 Descripción
 
-En este ejercicio se lleva a cabo el desarrollo de 9 scripts relacionados con la encriptación de texto mediante código ASCII, código binario, código Base64, XOR y la combinación de todas estas técnicas mediante una llave específica para el cifrado y descifrado de texto a través del método de sustitución.
+En este laboratorio se exploran distintos algoritmos de encriptación y su respectivo método de desencriptado. En la parte A solamente se llevan a cabo los algoritmos a la vez que se realizan las funciones para realizar el análisis de frecuencias de caracteres de un texto dado, la cual será útil en la segunda parte del laboratorio para llevar a cabo el desencriptado mediante fuerza bruta.
 
-* https://github.com/erickguerra22/Cifrados_2025.git
+* https://github.com/erickguerra22/Cifrados_2025/tree/Lab1
 
 ## ✨ Características
-- ASCII a binario
-- Base64 a binario
-- Binario a Base64
-- Binario a ASCII
-- Base64 a ASCII
-- XOR a un binario
-- Generación de llaves dinámicas
-- Cypher en ASCII con llave de tamaño fijo
-- Cypher en ASCII con llave de tamaño dinámico
+- Encriptación Caesar
+- Descencriptado Caesar
+- Encriptación Afín
+- Descencriptado Afín
+- Encriptación Vigenère
+- Descencriptado Vigenère
+- Análisis de frecuencias
+- Visualización de análisisi de frecuencias comparativo
 
 ## 📦 Dependencias Principales
 
