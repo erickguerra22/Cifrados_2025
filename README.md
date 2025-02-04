@@ -22,7 +22,7 @@ En este laboratorio se exploran distintos algoritmos de encriptación y su respe
 - Encriptación Vigenère
 - Descencriptado Vigenère
 - Análisis de frecuencias
-- Visualización de análisisi de frecuencias comparativo
+- Visualización de análisis de frecuencias comparativo
 
 ## 📦 Dependencias Principales
 
