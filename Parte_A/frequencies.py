@@ -2,10 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tabulate import tabulate
 
-print("-"*40)
-print("ANÁLISIS DE FRECUENCIAS")
-print("-"*40)
-
 alphabet = "abcdefghijklmnñopqrstuvwxyz"
 
 # Frecuencias teóricas en español
@@ -125,4 +121,7 @@ def getFrequencies(text):
     return frequencies
 
 if __name__ == "__main__":
+    print("-"*40)
+    print("ANÁLISIS DE FRECUENCIAS")
+    print("-"*40)
     compareFrequencies(text)

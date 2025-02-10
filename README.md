@@ -12,6 +12,11 @@ PROJECT DESCRIPTION
 
 En este laboratorio se exploran distintos algoritmos de encriptación y su respectivo método de desencriptado. En la parte A solamente se llevan a cabo los algoritmos a la vez que se realizan las funciones para realizar el análisis de frecuencias de caracteres de un texto dado, la cual será útil en la segunda parte del laboratorio para llevar a cabo el desencriptado mediante fuerza bruta.
 
+Para esta segunda fase, se implementan las funciones de desencriptación por fuerza bruta para los algoritmos:
+- Caesar
+- Afín
+- Vigenère
+
 * https://github.com/erickguerra22/Cifrados_2025/tree/Lab1
 
 ## ✨ Características
@@ -23,6 +28,7 @@ En este laboratorio se exploran distintos algoritmos de encriptación y su respe
 - Descencriptado Vigenère
 - Análisis de frecuencias
 - Visualización de análisis de frecuencias comparativo
+- Fuerza bruta para descifrar Caesar, Afín y Vigenère
 
 ## 📦 Dependencias Principales
 
