@@ -1,6 +1,6 @@
 # Cifrado Afín
 import math
-from utils import *
+from Parte_A.utils import *
 
 alphabet = "abcdefghijklmnñopqrstuvwxyz"
 

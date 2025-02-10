@@ -1,5 +1,5 @@
-# Cifrado Afín
-from utils import *
+# Cifrado Vigènere
+from Parte_A.utils import *
 
 alphabet = "abcdefghijklmnñopqrstuvwxyz"
 
@@ -10,7 +10,6 @@ def getKey():
         if op == 2:
             print(f"🔑 Llave generada: {key}")
         
-        # Verificar que todos los caracteres en Key están dentro de alphabet
         if all([c.lower() in alphabet for c in key]):
             break
         print("La llave contiene caracteres que no forman parte del alfabeto.")
@@ -41,6 +40,9 @@ def deCypher(cyph, key):
             message += c.upper() if char.isupper() else c
             continue
         newIndex = (alphabet.index(c) - alphabet.index(key[i % N].lower())) % M
+        # alphabet.index(maxTheorical) = 
+        # maxTheorical = key[cyph.index(item['letra']) % len(key)]
+        # (alphabet.index(item['letra']) - alphabet.index() % len(alphabet)
         message += alphabet[newIndex].upper() if char.isupper() else alphabet[newIndex]
     return message
 

@@ -1,5 +1,5 @@
 # Cifrado Caesar
-from utils import *
+from Parte_A.utils import *
 
 alphabet = "abcdefghijklmnñopqrstuvwxyz"
 
