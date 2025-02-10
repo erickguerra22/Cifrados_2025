@@ -2,7 +2,7 @@
 PROJECT NAME
 -->
 
-# LABORATORIO 1
+# LABORATORIO 2
 <a id="readme-top"></a>
 
 <!--
@@ -10,25 +10,21 @@ PROJECT DESCRIPTION
 -->
 ## 📜 Descripción
 
-En este laboratorio se exploran distintos algoritmos de encriptación y su respectivo método de desencriptado. En la parte A solamente se llevan a cabo los algoritmos a la vez que se realizan las funciones para realizar el análisis de frecuencias de caracteres de un texto dado, la cual será útil en la segunda parte del laboratorio para llevar a cabo el desencriptado mediante fuerza bruta.
+Este laboratorio tiene la finalidad de implementar funciones que demuestren el funcionamiento y uso de XOR, Base64 y binario, con el objetivo final de lograr la encriptación y desencriptado de imágenes que sean unidas en una sola. Además, se implementa el uso de la librería Pillow para manejo de imágenes y el uso de matrices de bits para controlar el comportamiento de las imagenes.
 
-Para esta segunda fase, se implementan las funciones de desencriptación por fuerza bruta para los algoritmos:
-- Caesar
-- Afín
-- Vigenère
+Para la primera fase, se implementa lo siguiente:
+- Conversión de caracteres a Bits.
+- Conversión de Bytes a caracteres.
+- Conversión de caracteres a Base64.
+- Conversión de Base64 a caracteres.
+- Operación XOR de bit a bit entre dos cadenas de texto.
 
-* https://github.com/erickguerra22/Cifrados_2025/tree/Lab1
+* https://github.com/erickguerra22/Cifrados_2025/tree/Lab2
 
 ## ✨ Características
-- Encriptación Caesar
-- Descencriptado Caesar
-- Encriptación Afín
-- Descencriptado Afín
-- Encriptación Vigenère
-- Descencriptado Vigenère
-- Análisis de frecuencias
-- Visualización de análisis de frecuencias comparativo
-- Fuerza bruta para descifrar Caesar, Afín y Vigenère
+- Conversión de cadenas de caracteres a código binario o encriptación Base64.
+- Conversión de cadenas binarias y Base64 a texto.
+- Aplicación de XOR entre dos cadenas de texto y conversión a texto de resultado final.
 
 ## 📦 Dependencias Principales
 
