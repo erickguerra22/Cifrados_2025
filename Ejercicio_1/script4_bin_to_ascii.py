@@ -1,10 +1,5 @@
 import math
 
-print("-"*40)
-print("CUARTO SCRIPT")
-print("-"*40)
-binary = input("Ingresa el binario a convertir en texto: ")
-
 def toDecimal(binary):
     decimal = 0
     for i in range(len(binary)-1,-1, -1):
@@ -21,10 +16,18 @@ def splitBinary(binary):
         binaryBlocks.insert(0, binary[i-8:i])
     return binaryBlocks
 
-binary = splitBinary(binary)
+def binary_to_text(binary):
+    binary = splitBinary(binary)
+    ascii = [toDecimal(block) for block in binary]
+    text = [chr(d) for d in ascii]
 
-ascii = [toDecimal(block) for block in binary]
-text = [chr(d) for d in ascii]
+    return "".join(text)
 
-print(f"\nRESULTADO:\n{"".join(text)}")
-print("-"*40)
+if __name__ == "__main__":
+    print("-"*40)
+    print("CUARTO SCRIPT")
+    print("-"*40)
+    binary = input("Ingresa el binario a convertir en texto: ")
+
+    print(f"\nRESULTADO:\n{binary_to_text(binary)}")
+    print("-"*40)

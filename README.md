@@ -19,12 +19,17 @@ Para la primera fase, se implementa lo siguiente:
 - Conversión de Base64 a caracteres.
 - Operación XOR de bit a bit entre dos cadenas de texto.
 
+En la segunda fase, se incluye:
+- Operación XOR bit a bit entre dos cadenas de texto.
+- Desencriptar imagen con una llave de texto.
+- Encriptar imagen con llave de texto.
+- XOR entre dos imagenes.
+
 * https://github.com/erickguerra22/Cifrados_2025/tree/Lab2
 
 ## ✨ Características
-- Conversión de cadenas de caracteres a código binario o encriptación Base64.
-- Conversión de cadenas binarias y Base64 a texto.
-- Aplicación de XOR entre dos cadenas de texto y conversión a texto de resultado final.
+- XOR entre imagen y texto.
+- XOR entre imagenes.
 
 ## 📦 Dependencias Principales
 
