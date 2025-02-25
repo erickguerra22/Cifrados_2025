@@ -1,20 +1,17 @@
 import math
 
 def toDecimal(binary):
-    decimal = 0
-    for i in range(len(binary)-1,-1, -1):
-        if binary[i] == '1':
-            decimal += 2 ** (len(binary) - i - 1)
-    return decimal
+    return int(binary, 2)
 
-def splitBinary(binary, blockLength = 8):
-    if len(binary) % blockLength != 0:
-        lastIndex = math.floor(len(binary) / blockLength) * blockLength
-        binary = f"{binary[:lastIndex]}{'0'*(blockLength-len(binary[lastIndex:]))}{binary[lastIndex:]}"
-    binaryBlocks = []
-    for i in range(len(binary), 0 ,-blockLength):
-        binaryBlocks.insert(0, binary[i-blockLength:i])
-    return binaryBlocks
+def splitBinary(binary, block_length=8):
+    blocks = []
+    for i in range(0, len(binary), block_length):
+        if i + block_length <= len(binary):
+            blocks.append(binary[i:i+block_length])
+        else:
+            last_block = binary[i:]
+            blocks.append(last_block.ljust(block_length, '0'))
+    return blocks
 
 if __name__ == "__main__":
     print("-"*40)

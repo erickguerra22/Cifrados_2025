@@ -1,21 +1,24 @@
 from tabulate import tabulate
-from Parte_A.string_to_binary import wordToBinary, toBinary
-from Parte_A.bytes_to_string import toDecimal, splitBinary
+from Lab2.Parte_A.string_to_binary import wordToBinary
+from Lab2.Parte_A.bytes_to_string import toDecimal, splitBinary
 
-def xor_strings(word, key, method = "fill"):
+def xor_strings(word, key, method="fill"):
     bin1 = wordToBinary(word)
     bin2 = wordToBinary(key)
         
     if method == "fill":
-        bin2 = f"{'0'*(len(bin1)-len(bin2))}{bin2}"
+        if len(bin2) < len(bin1):
+            bin2 = bin2.zfill(len(bin1))
+        elif len(bin2) > len(bin1):
+            bin2 = bin2[-len(bin1):]
     else:
         bin2 = bin2 * (len(bin1) // len(bin2)) + bin2[:len(bin1) % len(bin2)]
-        
-    dec1 = toDecimal(bin1)
-    dec2 = toDecimal(bin2)
-    xor = toBinary(dec1 ^ dec2, max(len(bin1), len(bin2)))
     
-    return bin1, bin2, xor
+    result = ''
+    for i in range(len(bin1)):
+        result += '1' if bin1[i] != bin2[i] else '0'
+    
+    return bin1, bin2, result
 
 if __name__ == "__main__":
     print("-"*40)

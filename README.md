@@ -2,7 +2,7 @@
 PROJECT NAME
 -->
 
-# LABORATORIO 2
+# Ejercicio Stream Cipher
 <a id="readme-top"></a>
 
 <!--
@@ -10,26 +10,19 @@ PROJECT DESCRIPTION
 -->
 ## 📜 Descripción
 
-Este laboratorio tiene la finalidad de implementar funciones que demuestren el funcionamiento y uso de XOR, Base64 y binario, con el objetivo final de lograr la encriptación y desencriptado de imágenes que sean unidas en una sola. Además, se implementa el uso de la librería Pillow para manejo de imágenes y el uso de matrices de bits para controlar el comportamiento de las imagenes.
+El objetivo de este ejercicio es comprender el concepto de un keystream y su importancia en los cifrados de flujo, así como implementar un esquema básico de cifrado y descifrado utilizando XOR y analizar las implicaciones de la reutilización del keystream y su longitud en la seguridad
 
-Para la primera fase, se implementa lo siguiente:
-- Conversión de caracteres a Bits.
-- Conversión de Bytes a caracteres.
-- Conversión de caracteres a Base64.
-- Conversión de Base64 a caracteres.
-- Operación XOR de bit a bit entre dos cadenas de texto.
+Para completar el ejercicio, se implementa lo siguiente:
+- Generación de Keystream mediante una semilla inicial y la longitud del mensaje a cifrar.
+- Cifrado del mensaje mediante el keystream generado pseudoaleatoriamente.
+- Cifrado del mensaje encriptado mediante el keystream generado pseudoaleatoriamente.
 
-En la segunda fase, se incluye:
-- Operación XOR bit a bit entre dos cadenas de texto.
-- Desencriptar imagen con una llave de texto.
-- Encriptar imagen con llave de texto.
-- XOR entre dos imagenes.
-
-* https://github.com/erickguerra22/Cifrados_2025/tree/Lab2
+* https://github.com/erickguerra22/Cifrados_2025/tree/ejercicio_stream_cypher
 
 ## ✨ Características
-- XOR entre imagen y texto.
-- XOR entre imagenes.
+- Generación de Keystream.
+- Cifrado de mensaje mediante Keystream.
+- Descifrado de mensaje mediante Keystream.
 
 ## 📦 Dependencias Principales
 
