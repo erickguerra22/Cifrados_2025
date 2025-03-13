@@ -2,7 +2,7 @@
 PROJECT NAME
 -->
 
-# Ejercicio Stream Cipher
+# Ejercicio Block Cipher
 <a id="readme-top"></a>
 
 <!--
@@ -10,19 +10,20 @@ PROJECT DESCRIPTION
 -->
 ## 📜 Descripción
 
-El objetivo de este ejercicio es comprender el concepto de un keystream y su importancia en los cifrados de flujo, así como implementar un esquema básico de cifrado y descifrado utilizando XOR y analizar las implicaciones de la reutilización del keystream y su longitud en la seguridad
+El objetivo de este ejercicio es comprender el funcionamiento de los cifrados de bloque y sus diferentes modos de operación, así como implementar esquemas básicos de cifrado y descifrado utilizando DES, 3DES y AES. También se busca analizar las diferencias entre los modos ECB y CBC, especialmente en el cifrado de imágenes.
 
 Para completar el ejercicio, se implementa lo siguiente:
-- Generación de Keystream mediante una semilla inicial y la longitud del mensaje a cifrar.
-- Cifrado del mensaje mediante el keystream generado pseudoaleatoriamente.
-- Cifrado del mensaje encriptado mediante el keystream generado pseudoaleatoriamente.
+- Cifrado y descifrado con DES en modo ECB con padding manual.
+- Cifrado y descifrado con 3DES en modo CBC con padding de librería.
+- Cifrado y descifrado con AES en modos ECB y CBC, comparando visualmente los resultados en imágenes.
 
-* https://github.com/erickguerra22/Cifrados_2025/tree/ejercicio_stream_cypher
+* https://github.com/erickguerra22/Cifrados_2025/tree/ejercicio_block_cypher
 
 ## ✨ Características
-- Generación de Keystream.
-- Cifrado de mensaje mediante Keystream.
-- Descifrado de mensaje mediante Keystream.
+- Generación aleatoria de claves para DES, 3DES y AES.
+- Implementación de padding manual para DES.
+- Uso de vector de inicialización (IV) en modos CBC.
+- Visualización de diferencias entre ECB y CBC en imágenes.
 
 ## 📦 Dependencias Principales
 
