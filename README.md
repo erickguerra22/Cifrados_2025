@@ -17,7 +17,7 @@ Para completar el ejercicio, se implementa lo siguiente:
 - Cifrado y descifrado con 3DES en modo CBC con padding de librería.
 - Cifrado y descifrado con AES en modos ECB y CBC, comparando visualmente los resultados en imágenes.
 
-* https://github.com/erickguerra22/Cifrados_2025/tree/ejercicio_block_cypher
+* https://github.com/erickguerra22/Cifrados_2025/tree/ejercicio_block_cipher
 
 ## ✨ Características
 - Generación aleatoria de claves para DES, 3DES y AES.
