@@ -2,7 +2,7 @@
 PROJECT NAME
 -->
 
-# Ejercicio Block Cipher
+# Laboratorio 3
 <a id="readme-top"></a>
 
 <!--
@@ -10,20 +10,23 @@ PROJECT DESCRIPTION
 -->
 ## 📜 Descripción
 
-El objetivo de este ejercicio es comprender el funcionamiento de los cifrados de bloque y sus diferentes modos de operación, así como implementar esquemas básicos de cifrado y descifrado utilizando DES, 3DES y AES. También se busca analizar las diferencias entre los modos ECB y CBC, especialmente en el cifrado de imágenes.
+El objetivo de este ejercicio consiste en implementar AES con los modos ECB y CBC en un entorno real, así como aplicar ChaCha20 como alternativa de cifrado de flujo. Se busca también analizar los riesgos de los modos ECB y CBC en imágenes e implementar cifrados en un protocolo de comunicación con Wireshark. Finalmente, se pretende explorar cómo se puede llegar a romper un cifrado mal implementado.
 
-Para completar el ejercicio, se implementa lo siguiente:
-- Cifrado y descifrado con DES en modo ECB con padding manual.
-- Cifrado y descifrado con 3DES en modo CBC con padding de librería.
-- Cifrado y descifrado con AES en modos ECB y CBC, comparando visualmente los resultados en imágenes.
+Para completar el laboratorio, se implementa lo siguiente:
+- Cifrado y descifrado de imágenes con AES en modos ECB y CBC.
+- Envío de mensajes con cifrado AES-CBC a través de la red.
+- Captura de mensajes enviados a través de la red mediante Wireshark.
+- Cifrado y descifrado de mensajes mediante ChaCha20.
+- Comparativa de rendimiento entre AES-CBC y ChaCha20.
+- Simulación de ransomware para cifrar un directorio y todos los subdirectorios dentro de él.
 
-* https://github.com/erickguerra22/Cifrados_2025/tree/ejercicio_block_cipher
+* https://github.com/erickguerra22/Cifrados_2025/tree/lab3
 
 ## ✨ Características
-- Generación aleatoria de claves para DES, 3DES y AES.
-- Implementación de padding manual para DES.
-- Uso de vector de inicialización (IV) en modos CBC.
-- Visualización de diferencias entre ECB y CBC en imágenes.
+- Cifrado de AES mediante ECB y CBC.
+- Cifrado mediante ChaCha20.
+- Captura de paquetes con WireShark.
+- Simulación de Ransomware.
 
 ## 📦 Dependencias Principales
 
