@@ -2,7 +2,7 @@
 PROJECT NAME
 -->
 
-# Laboratorio 3
+# Laboratorio 5
 <a id="readme-top"></a>
 
 <!--
@@ -10,23 +10,16 @@ PROJECT DESCRIPTION
 -->
 ## 📜 Descripción
 
-El objetivo de este ejercicio consiste en implementar AES con los modos ECB y CBC en un entorno real, así como aplicar ChaCha20 como alternativa de cifrado de flujo. Se busca también analizar los riesgos de los modos ECB y CBC en imágenes e implementar cifrados en un protocolo de comunicación con Wireshark. Finalmente, se pretende explorar cómo se puede llegar a romper un cifrado mal implementado.
+El objetivo de este ejercicio consiste en entender cómo funciona la criptografía cuántica (BB84) de forma simple y aplicada a través de la simulación de seguridad cuántica mediante QKD, a través de código utilizando lógica y creatividad, de manera que se permita descubrir cómo el azar puede proteger secretos.
 
-Para completar el laboratorio, se implementa lo siguiente:
-- Cifrado y descifrado de imágenes con AES en modos ECB y CBC.
-- Envío de mensajes con cifrado AES-CBC a través de la red.
-- Captura de mensajes enviados a través de la red mediante Wireshark.
-- Cifrado y descifrado de mensajes mediante ChaCha20.
-- Comparativa de rendimiento entre AES-CBC y ChaCha20.
-- Simulación de ransomware para cifrar un directorio y todos los subdirectorios dentro de él.
+También se espera traducir ideas complejas en algo que otros puedan entender fácilmente, con el fin de transmitir cómo los cifrados serán un impacto en el mundo.
 
-* https://github.com/erickguerra22/Cifrados_2025/tree/lab3
+* https://github.com/erickguerra22/Cifrados_2025/tree/lab5
 
 ## ✨ Características
-- Cifrado de AES mediante ECB y CBC.
-- Cifrado mediante ChaCha20.
-- Captura de paquetes con WireShark.
-- Simulación de Ransomware.
+- Simulación de encriptación QKB.
+- Simulación de espía/interceptor de mensajes.
+- Creación de clave de seguridad a partir de bits coincidentes entre Alice y Bob.
 
 ## 📦 Dependencias Principales
 
@@ -46,7 +39,7 @@ Si deseas contribuir al proyecto, por favor sigue los siguientes pasos:
 ### Developer's
 
 <a href="https://github.com/erickguerra22">
-  <img width='75' src="https://avatars.githubusercontent.com/u/16949087?v=4" alt="Erick Guerra" />
+  <img width='75' src="https://avatars.githubusercontent.com/u/54110665?s=400&u=c5fa442925acd31ffefddc38f272c65556b2efb4&v=4" alt="Erick Guerra" />
 </a>
 
 * [![Linkedin][Linkedin]][Linkedin-erick]
