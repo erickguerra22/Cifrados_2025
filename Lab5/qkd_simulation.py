@@ -1,6 +1,5 @@
 from utils import *
 
-# Ejecución de la simulación
 n_bits = int(input("Ingrese el número de bits a simular: "))
 print("=== Simulación BB84 sin interceptación ===")
 df, key_bits, porcentaje, _ = simular_bb84(n_bits)
